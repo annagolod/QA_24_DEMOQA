@@ -51,6 +51,8 @@ public class CssLocators {
             System.out.println("text--> " + el.getText());
 
         }
+        WebElement elementSpan = driver.findElement(By.cssSelector("ul.menu-list>#item-3>span"));
+        System.out.println("--> " + elementSpan.getText());
 
         driver.quit();
     }
