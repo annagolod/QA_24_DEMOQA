@@ -14,7 +14,7 @@ public class TestBase implements AppManager {
 
     @AfterSuite
     public void tearDown(){
-        //stop();
+        stop();
     }
 
 
