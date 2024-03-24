@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8b37ff0-0c5c-475d-9b0a-c37478fb99e8" name="Changes" comment="added AppManager" />
+    <list default="true" id="c8b37ff0-0c5c-475d-9b0a-c37478fb99e8" name="Changes" comment="added StudentDTO &amp; fillRegistrationForm" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,22 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.CssLocators.buttons.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CssLocators.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CssLocators.start.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.StudentFormTests.studentFormPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.XpathLocators.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.CssLocators.buttons.executor": "Run",
+    "Gradle.CssLocators.executor": "Run",
+    "Gradle.CssLocators.start.executor": "Run",
+    "Gradle.StudentFormTests.executor": "Run",
+    "Gradle.StudentFormTests.studentFormPositiveTest.executor": "Run",
+    "Gradle.XpathLocators.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.StudentFormTests.studentFormPositiveTest">
+}]]></component>
+  <component name="RunManager" selected="Gradle.StudentFormTests">
     <configuration name="CssLocators" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,7 +105,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CssLocators.start" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StudentFormTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -117,7 +118,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;locators.CssLocators.start&quot;" />
+            <option value="&quot;tests.StudentFormTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StudentFormTests" />
         <item itemvalue="Gradle.StudentFormTests.studentFormPositiveTest" />
+        <item itemvalue="Gradle.CssLocators" />
         <item itemvalue="Gradle.XpathLocators" />
         <item itemvalue="Gradle.CssLocators.buttons" />
-        <item itemvalue="Gradle.CssLocators" />
-        <item itemvalue="Gradle.CssLocators.start" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710265864820</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added StudentDTO &amp; fillRegistrationForm">
+      <option name="closed" value="true" />
+      <created>1711103743340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711103743340</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -259,6 +268,7 @@
     <MESSAGE value="added CssLocators" />
     <MESSAGE value="added XpathLocators" />
     <MESSAGE value="added AppManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="added AppManager" />
+    <MESSAGE value="added StudentDTO &amp; fillRegistrationForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="added StudentDTO &amp; fillRegistrationForm" />
   </component>
 </project>
