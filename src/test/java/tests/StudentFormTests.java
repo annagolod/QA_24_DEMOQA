@@ -27,10 +27,14 @@ public class StudentFormTests extends TestBase implements HelperStudent {
                 .email("tret@gmail.com")
                 .gender("Male")
                 .mobile("1234567890")
-               // .dateOfBirth()
+                .dateOfBirth("22 Jun 1999")
+                .subjects("Maths,Physics,Arts")
+                .hobbies("Reading,Sports")
+                .address("Street 1 app.2")
+                .state("NCR")
+                .city("Delhi")
                 .build();
         fillStudentForm(student);
     }
-
 
 }

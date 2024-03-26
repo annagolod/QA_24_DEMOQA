@@ -11,6 +11,7 @@ public class TestBase implements AppManager {
 
     public void setUp(){
         init();
+        //initAddOptions();
     }
 
     @AfterSuite
