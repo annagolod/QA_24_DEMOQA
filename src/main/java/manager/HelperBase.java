@@ -33,4 +33,8 @@ public interface HelperBase extends AppManager{
         element.clear();
         element.sendKeys(text);
     }
+
+    default boolean isElementPresent(By locator){
+        return !driver.findElements(locator).isEmpty();
+    }
 }

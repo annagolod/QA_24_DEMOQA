@@ -22,6 +22,10 @@ public interface HelperStudent extends HelperBase {
 
     By btnForms = By.xpath("//div[@class='category-cards']/div[2]");
     By btnPracticeForm = By.xpath("//span[text() = 'Practice Form']");
+    By btnSubmit = By.id("submit");
+    By titleSubmitForm = By.id("example-modal-sizes-title-lg");
+    By btnClose = By.id("closeLargeModal");
+
 
 
     default void selectPracticeForm() {
@@ -29,6 +33,10 @@ public interface HelperStudent extends HelperBase {
         //hideBanner();
         clickBase(btnPracticeForm);
 
+    }
+
+    default void clickButtonSubmit(){
+        clickBase(btnSubmit);
     }
 
     default void fillStudentForm(StudentDTO student) {
@@ -43,6 +51,7 @@ public interface HelperStudent extends HelperBase {
         selectHobby(student.getHobbies());
         typeBase(textAreaCurrentAddress, student.getAddress());
         typeState(student.getState());
+        typeCity(student.getCity());
 
     }
     default void typeCity(String city){
@@ -113,6 +122,14 @@ public interface HelperStudent extends HelperBase {
             clickBase(By.xpath("//label[@for='gender-radio-3']"));
         }
 
+    }
+
+    default boolean isElementPresent_TitleSubmitForm(){
+        return isElementPresent(titleSubmitForm);
+    }
+
+    default void clickBtnClose(){
+        clickBase(btnClose);
     }
 
 }
