@@ -58,11 +58,42 @@ public class StudentFormTests extends TestBase implements HelperStudent {
 
     @Test
     public void studentFormPositiveTest1(){
-        
+        StudentDTO student = StudentDTO.builder()
+                .firstName("Frodo-1")
+                .lastName("Baggins-1")
+                .email("frodo123@mail.com")
+                .gender("Female")
+                .mobile("1234567890")
+                .dateOfBirth("22 Aug 2007")
+                .subjects("Maths,Physics,Arts")
+                .hobbies("Reading,Sports")
+                .address("Street 1, app. 2")
+                .state("NCR")
+                .city("Delhi")
+                .build();
+        fillStudentForm(student);
+        clickButtonSubmit();
+        Assert.assertTrue(isElementPresent_TitleSubmitForm());
     }
 
     @Test
     public void studentFormNegativeTest_EmptyLastName(){
+        StudentDTO student = StudentDTO.builder()
+                .firstName("Frodo-1")
+                .lastName("")
+                .email("frodo123@mail.com")
+                .gender("Female")
+                .mobile("1234567890")
+                .dateOfBirth("22 Aug 2007")
+                .subjects("Maths,Physics,Arts")
+                .hobbies("Reading,Sports")
+                .address("Street 1, app. 2")
+                .state("NCR")
+                .city("Delhi")
+                .build();
+        fillStudentForm(student);
+        clickButtonSubmit();
+        Assert.assertFalse(isElementPresent_TitleSubmitForm());
 
     }
 
